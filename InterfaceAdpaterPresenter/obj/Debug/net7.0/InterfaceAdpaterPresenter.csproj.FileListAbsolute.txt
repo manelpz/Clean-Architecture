@@ -1,0 +1,17 @@
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/bin/Debug/net7.0/InterfaceAdpaterPresenter.deps.json
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/bin/Debug/net7.0/InterfaceAdpaterPresenter.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/bin/Debug/net7.0/InterfaceAdpaterPresenter.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/bin/Debug/net7.0/ApplicationBusinessLayer.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/bin/Debug/net7.0/EnterpriseBusinessLayer.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/bin/Debug/net7.0/ApplicationBusinessLayer.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/bin/Debug/net7.0/EnterpriseBusinessLayer.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/obj/Debug/net7.0/InterfaceAdpaterPresenter.csproj.AssemblyReference.cache
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/obj/Debug/net7.0/InterfaceAdpaterPresenter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/obj/Debug/net7.0/InterfaceAdpaterPresenter.AssemblyInfoInputs.cache
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/obj/Debug/net7.0/InterfaceAdpaterPresenter.AssemblyInfo.cs
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/obj/Debug/net7.0/InterfaceAdpaterPresenter.csproj.CoreCompileInputs.cache
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/obj/Debug/net7.0/InterfaceAdpaterPresenter.csproj.CopyComplete
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/obj/Debug/net7.0/InterfaceAdpaterPresenter.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/obj/Debug/net7.0/refint/InterfaceAdpaterPresenter.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/obj/Debug/net7.0/InterfaceAdpaterPresenter.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/obj/Debug/net7.0/ref/InterfaceAdpaterPresenter.dll

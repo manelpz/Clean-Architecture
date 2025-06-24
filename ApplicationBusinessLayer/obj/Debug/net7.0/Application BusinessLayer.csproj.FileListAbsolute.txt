@@ -1,0 +1,5 @@
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/Application BusinessLayer/obj/Debug/net7.0/Application BusinessLayer.csproj.AssemblyReference.cache
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/Application BusinessLayer/obj/Debug/net7.0/Application BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/Application BusinessLayer/obj/Debug/net7.0/Application BusinessLayer.AssemblyInfoInputs.cache
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/Application BusinessLayer/obj/Debug/net7.0/Application BusinessLayer.AssemblyInfo.cs
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/Application BusinessLayer/obj/Debug/net7.0/Application BusinessLayer.csproj.CoreCompileInputs.cache

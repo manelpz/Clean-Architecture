@@ -1,0 +1,17 @@
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/bin/Debug/net7.0/InterfaceAdapterMappers.deps.json
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/bin/Debug/net7.0/InterfaceAdapterMappers.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/bin/Debug/net7.0/InterfaceAdapterMappers.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/bin/Debug/net7.0/ApplicationBusinessLayer.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/bin/Debug/net7.0/EnterpriseBusinessLayer.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/bin/Debug/net7.0/ApplicationBusinessLayer.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/bin/Debug/net7.0/EnterpriseBusinessLayer.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/obj/Debug/net7.0/InterfaceAdapterMappers.csproj.AssemblyReference.cache
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/obj/Debug/net7.0/InterfaceAdapterMappers.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/obj/Debug/net7.0/InterfaceAdapterMappers.AssemblyInfoInputs.cache
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/obj/Debug/net7.0/InterfaceAdapterMappers.AssemblyInfo.cs
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/obj/Debug/net7.0/InterfaceAdapterMappers.csproj.CoreCompileInputs.cache
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/obj/Debug/net7.0/InterfaceAdapterMappers.csproj.CopyComplete
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/obj/Debug/net7.0/InterfaceAdapterMappers.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/obj/Debug/net7.0/refint/InterfaceAdapterMappers.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/obj/Debug/net7.0/InterfaceAdapterMappers.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/obj/Debug/net7.0/ref/InterfaceAdapterMappers.dll

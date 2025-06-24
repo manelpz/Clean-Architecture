@@ -1,0 +1,12 @@
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/bin/Debug/net7.0/EnterpriseBusinessLayer.deps.json
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/bin/Debug/net7.0/EnterpriseBusinessLayer.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/bin/Debug/net7.0/EnterpriseBusinessLayer.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/obj/Debug/net7.0/EnterpriseBusinessLayer.csproj.AssemblyReference.cache
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/obj/Debug/net7.0/EnterpriseBusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/obj/Debug/net7.0/EnterpriseBusinessLayer.AssemblyInfoInputs.cache
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/obj/Debug/net7.0/EnterpriseBusinessLayer.AssemblyInfo.cs
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/obj/Debug/net7.0/EnterpriseBusinessLayer.csproj.CoreCompileInputs.cache
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/obj/Debug/net7.0/EnterpriseBusinessLayer.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/obj/Debug/net7.0/refint/EnterpriseBusinessLayer.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/obj/Debug/net7.0/EnterpriseBusinessLayer.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/obj/Debug/net7.0/ref/EnterpriseBusinessLayer.dll
