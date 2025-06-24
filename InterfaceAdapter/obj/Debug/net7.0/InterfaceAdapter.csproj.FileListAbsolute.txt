@@ -1,0 +1,17 @@
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/obj/Debug/net7.0/InterfaceAdapter.csproj.AssemblyReference.cache
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/obj/Debug/net7.0/InterfaceAdapter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/obj/Debug/net7.0/InterfaceAdapter.AssemblyInfoInputs.cache
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/obj/Debug/net7.0/InterfaceAdapter.AssemblyInfo.cs
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/obj/Debug/net7.0/InterfaceAdapter.csproj.CoreCompileInputs.cache
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/bin/Debug/net7.0/InterfaceAdapter.deps.json
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/bin/Debug/net7.0/InterfaceAdapter.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/bin/Debug/net7.0/InterfaceAdapter.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/bin/Debug/net7.0/EnterpriseBusinessLayer.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/bin/Debug/net7.0/EnterpriseBusinessLayer.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/obj/Debug/net7.0/InterfaceAdapter.csproj.CopyComplete
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/obj/Debug/net7.0/InterfaceAdapter.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/obj/Debug/net7.0/refint/InterfaceAdapter.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/obj/Debug/net7.0/InterfaceAdapter.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/obj/Debug/net7.0/ref/InterfaceAdapter.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/bin/Debug/net7.0/InterfaceAdaptarModels.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/bin/Debug/net7.0/InterfaceAdaptarModels.pdb
