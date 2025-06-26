@@ -3,7 +3,14 @@
 
 using ApplicationBusinessLayer;
 using EnterpriseBusinessLayer;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using FrameworkDriversAPI.Middlewares;
+using FrameworkDriversAPI.Validators;
+using FrameworkDriversExternalServices;
 using InterfaceAdaptarModels;
+using InterfaceAdapterAdapters;
+using InterfaceAdapterAdapters.DTO;
 using InterfaceAdapterMappers;
 using InterfaceAdapterMappers.DTO.Request;
 //using InterfaceAdapter;
@@ -29,11 +36,23 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IRepository<Beer>, Repository>();
 builder.Services.AddScoped<IPresenter<Beer, BeerViewModel>, BeerPresenter>();
-    
+ 
+//presentar detail
+builder.Services.AddScoped<IPresenter<Beer, BeerDetailViewModel>, BeerDetailPresenter>();
+builder.Services.AddScoped<IExternalService<PostServiceDTO>, PostService>();
+builder.Services.AddScoped<IExternalServiceAdapter<Post>, PostExternalServiceAdapter>();
 //use case injection
 builder.Services.AddScoped<GetBeerUseCase<Beer, BeerViewModel>>();
+builder.Services.AddScoped<GetBeerUseCase<Beer, BeerDetailViewModel>>();
+builder.Services.AddScoped<GetPostUseCase>();
+
 builder.Services.AddScoped<AddBeerUseCase<BeerRequestDTO>>();
 builder.Services.AddScoped<IMapper<BeerRequestDTO, Beer>, BeerMapper>();
+
+//validators
+builder.Services.AddValidatorsFromAssemblyContaining<BeerValidator>();
+builder.Services.AddFluentValidation();
+//builder.Services.AddFluentValidationClientsideAdapters();
 
 var app = builder.Build();
 
@@ -45,7 +64,10 @@ if ( app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-  
+
+//adding middleware for handling exceptions
+app.UseMiddleware<ExceptionMiddleware>();
+
 app.MapGet("/beer", async (GetBeerUseCase<Beer, BeerViewModel> beerUseCase) =>
 {
     //return "hola mundo";
@@ -54,9 +76,37 @@ app.MapGet("/beer", async (GetBeerUseCase<Beer, BeerViewModel> beerUseCase) =>
     .WithName("beers")
     .WithOpenApi();
 
+app.MapGet("/beerDetail", async (GetBeerUseCase<Beer, BeerDetailViewModel> beerUseCaseDetail) =>
+    {
+        return await beerUseCaseDetail.ExecuteAsync();
+    })
+    .WithName("beerDetail")
+    .WithOpenApi();
 
-app.MapPost("/beer", async (BeerRequestDTO beerRequest, AddBeerUseCase<BeerRequestDTO> beerUseCase) =>
+app.MapGet("/post", async (GetPostUseCase postUseCase) =>
+    {
+        return await postUseCase.ExecuteAsync();
+    })
+    .WithName("post")
+    .WithOpenApi();
+
+app.MapPost("/beer", async (AddBeerUseCase<BeerRequestDTO> beerUseCase, BeerRequestDTO beerRequest,
+    IValidator<BeerRequestDTO> validator) =>
         {
+            var result = await validator.ValidateAsync(beerRequest);
+
+            if (!result.IsValid)
+            {
+                return Results.ValidationProblem(result.Errors
+                    .GroupBy(e => e.PropertyName)
+                    .ToDictionary(
+                        g => g.Key,
+                        g => g.Select(e => e.ErrorMessage).ToArray()
+                    )
+                    
+                    );
+            }
+            
             await beerUseCase.ExecuteAsync(beerRequest);
             return Results.Created($"/beer/{beerRequest.Id}", beerRequest);
         }

@@ -83,3 +83,10 @@
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversAPI/bin/Debug/net7.0/InterfaceAdpaterPresenter.pdb
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversAPI/bin/Debug/net7.0/InterfaceAdapterMappers.dll
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversAPI/bin/Debug/net7.0/InterfaceAdapterMappers.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversAPI/bin/Debug/net7.0/FluentValidation.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversAPI/bin/Debug/net7.0/FluentValidation.AspNetCore.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversAPI/bin/Debug/net7.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversAPI/bin/Debug/net7.0/FrameworkDriversExternalServices.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversAPI/bin/Debug/net7.0/InterfaceAdapterAdapters.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversAPI/bin/Debug/net7.0/FrameworkDriversExternalServices.pdb
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversAPI/bin/Debug/net7.0/InterfaceAdapterAdapters.pdb

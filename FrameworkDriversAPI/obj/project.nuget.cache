@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Pfgo9tvlWBI=",
+  "dgSpecHash": "pHSBzwTwQF4=",
   "success": true,
   "projectFilePath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversAPI/FrameworkDriversAPI.csproj",
   "expectedPackageFiles": [
     "/Users/emmanuellopezguerrero/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/emmanuellopezguerrero/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
+    "/Users/emmanuellopezguerrero/.nuget/packages/fluentvalidation/10.4.0/fluentvalidation.10.4.0.nupkg.sha512",
+    "/Users/emmanuellopezguerrero/.nuget/packages/fluentvalidation.aspnetcore/10.4.0/fluentvalidation.aspnetcore.10.4.0.nupkg.sha512",
+    "/Users/emmanuellopezguerrero/.nuget/packages/fluentvalidation.dependencyinjectionextensions/10.4.0/fluentvalidation.dependencyinjectionextensions.10.4.0.nupkg.sha512",
     "/Users/emmanuellopezguerrero/.nuget/packages/microsoft.aspnetcore.openapi/7.0.20/microsoft.aspnetcore.openapi.7.0.20.nupkg.sha512",
     "/Users/emmanuellopezguerrero/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/emmanuellopezguerrero/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",

@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "InterfaceAdapterAdapters/1.0.0": {
+        "dependencies": {
+          "ApplicationBusinessLayer": "1.0.0"
+        },
+        "runtime": {
+          "InterfaceAdapterAdapters.dll": {}
+        }
+      },
+      "ApplicationBusinessLayer/1.0.0": {
+        "dependencies": {
+          "EnterpriseBusinessLayer": "1.0.0"
+        },
+        "runtime": {
+          "ApplicationBusinessLayer.dll": {}
+        }
+      },
+      "EnterpriseBusinessLayer/1.0.0": {
+        "runtime": {
+          "EnterpriseBusinessLayer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "InterfaceAdapterAdapters/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ApplicationBusinessLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EnterpriseBusinessLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

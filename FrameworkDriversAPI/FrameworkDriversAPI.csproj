@@ -7,12 +7,16 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="10.4.0" />
+        <PackageReference Include="FluentValidation.AspNetCore" Version="10.4.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.20"/>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\ApplicationBusinessLayer\ApplicationBusinessLayer.csproj" />
+      <ProjectReference Include="..\FrameworkDriversExternalServices\FrameworkDriversExternalServices.csproj" />
+      <ProjectReference Include="..\InterfaceAdapterAdapters\InterfaceAdapterAdapters.csproj" />
       <ProjectReference Include="..\InterfaceAdapterMappers\InterfaceAdapterMappers.csproj" />
       <ProjectReference Include="..\InterfaceAdapterRepository\InterfaceAdapterRepository.csproj" />
       <ProjectReference Include="..\InterfaceAdapter\InterfaceAdapter.csproj" />

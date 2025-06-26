@@ -1,3 +1,4 @@
+using ApplicationBusinessLayer.Exceptions;
 using EnterpriseBusinessLayer;
 
 namespace ApplicationBusinessLayer;
@@ -16,8 +17,8 @@ public class AddBeerUseCase<TDTO>
     public async Task ExecuteAsync(TDTO beerDTO)
     {
         var beer = _mapper.ToEntity(beerDTO);
-        if(string.IsNullOrEmpty(beer.Name))
-            throw new Exception("Name is required");
+        if (string.IsNullOrEmpty(beer.Name))
+            throw new ValidationException("Name is required");
         
         await _beerRepository.AddAsync(beer);
     }
