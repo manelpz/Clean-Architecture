@@ -46,6 +46,56 @@
           }
         }
       },
+      "FluentValidation/10.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/10.4.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "10.4.0",
+          "FluentValidation.DependencyInjectionExtensions": "10.4.0"
+        },
+        "compile": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "FluentValidation.DependencyInjectionExtensions/10.4.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "10.4.0",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.OpenApi/7.0.20": {
         "type": "package",
         "dependencies": {
@@ -1157,6 +1207,21 @@
           "bin/placeholder/EnterpriseBusinessLayer.dll": {}
         }
       },
+      "FrameworkDriversExternalServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "ApplicationBusinessLayer": "1.0.0",
+          "EnterpriseBusinessLayer": "1.0.0",
+          "InterfaceAdapterAdapters": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FrameworkDriversExternalServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FrameworkDriversExternalServices.dll": {}
+        }
+      },
       "InterfaceAdaptarModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1181,6 +1246,19 @@
         },
         "runtime": {
           "bin/placeholder/InterfaceAdapter.dll": {}
+        }
+      },
+      "InterfaceAdapterAdapters/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "ApplicationBusinessLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InterfaceAdapterAdapters.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InterfaceAdapterAdapters.dll": {}
         }
       },
       "InterfaceAdapterMappers/1.0.0": {
@@ -1264,6 +1342,63 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "FluentValidation/10.4.0": {
+      "sha512": "rVI1b5L3pq3layrRKIo3N7AT3PWey8ocPZhf6zeHYf6LBBvnP1KzW3bm7KmeazOWW8m1KXMD+shfviIcKSgQ0g==",
+      "type": "package",
+      "path": "fluentvalidation/10.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.10.4.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/10.4.0": {
+      "sha512": "CF/YkJ+ls/Y76ZTZtQ6Ye9rfRM4TcAL6R8c4q8dDRQzS0/6hL+PG/Vssht3ha/wFMoBd0kiosC7JFxbtWBTccg==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/10.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.aspnetcore.10.4.0.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/net5.0/FluentValidation.AspNetCore.dll",
+        "lib/net5.0/FluentValidation.AspNetCore.xml",
+        "lib/net6.0/FluentValidation.AspNetCore.dll",
+        "lib/net6.0/FluentValidation.AspNetCore.xml",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/10.4.0": {
+      "sha512": "25LzRDm9Chfyw4aPMsoE+3qkz1x2evb2/537hUcnqkhA9zpREfQYm8y1JF1LCMdcH57q5QAZ27X7dqVOcN6TOA==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/10.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.10.4.0.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
     "Microsoft.AspNetCore.OpenApi/7.0.20": {
@@ -3729,6 +3864,11 @@
       "path": "../EnterpriseBusinessLayer/EnterpriseBusinessLayer.csproj",
       "msbuildProject": "../EnterpriseBusinessLayer/EnterpriseBusinessLayer.csproj"
     },
+    "FrameworkDriversExternalServices/1.0.0": {
+      "type": "project",
+      "path": "../FrameworkDriversExternalServices/FrameworkDriversExternalServices.csproj",
+      "msbuildProject": "../FrameworkDriversExternalServices/FrameworkDriversExternalServices.csproj"
+    },
     "InterfaceAdaptarModels/1.0.0": {
       "type": "project",
       "path": "../InterfaceAdaptarModels/InterfaceAdaptarModels.csproj",
@@ -3738,6 +3878,11 @@
       "type": "project",
       "path": "../InterfaceAdapter/InterfaceAdapter.csproj",
       "msbuildProject": "../InterfaceAdapter/InterfaceAdapter.csproj"
+    },
+    "InterfaceAdapterAdapters/1.0.0": {
+      "type": "project",
+      "path": "../InterfaceAdapterAdapters/InterfaceAdapterAdapters.csproj",
+      "msbuildProject": "../InterfaceAdapterAdapters/InterfaceAdapterAdapters.csproj"
     },
     "InterfaceAdapterMappers/1.0.0": {
       "type": "project",
@@ -3758,7 +3903,11 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "ApplicationBusinessLayer >= 1.0.0",
+      "FluentValidation >= 10.4.0",
+      "FluentValidation.AspNetCore >= 10.4.0",
+      "FrameworkDriversExternalServices >= 1.0.0",
       "InterfaceAdapter >= 1.0.0",
+      "InterfaceAdapterAdapters >= 1.0.0",
       "InterfaceAdapterMappers >= 1.0.0",
       "InterfaceAdapterRepository >= 1.0.0",
       "InterfaceAdpaterPresenter >= 1.0.0",
@@ -3795,8 +3944,14 @@
             "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/ApplicationBusinessLayer/ApplicationBusinessLayer.csproj": {
               "projectPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/ApplicationBusinessLayer/ApplicationBusinessLayer.csproj"
             },
+            "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversExternalServices/FrameworkDriversExternalServices.csproj": {
+              "projectPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversExternalServices/FrameworkDriversExternalServices.csproj"
+            },
             "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/InterfaceAdapter.csproj": {
               "projectPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapter/InterfaceAdapter.csproj"
+            },
+            "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterAdapters/InterfaceAdapterAdapters.csproj": {
+              "projectPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterAdapters/InterfaceAdapterAdapters.csproj"
             },
             "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/InterfaceAdapterMappers.csproj": {
               "projectPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterMappers/InterfaceAdapterMappers.csproj"
@@ -3820,6 +3975,14 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[10.4.0, )"
+          },
+          "FluentValidation.AspNetCore": {
+            "target": "Package",
+            "version": "[10.4.0, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[7.0.20, )"
