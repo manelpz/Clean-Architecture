@@ -52,7 +52,10 @@ builder.Services.AddScoped<IMapper<BeerRequestDTO, Beer>, BeerMapper>();
 //validators
 builder.Services.AddValidatorsFromAssemblyContaining<BeerValidator>();
 builder.Services.AddFluentValidation();
-//builder.Services.AddFluentValidationClientsideAdapters();
+builder.Services.AddHttpClient<IExternalService<PostServiceDTO>, PostService>(c =>
+{
+    c.BaseAddress = new Uri(builder.Configuration["BaseUrlPost"]);
+});
 
 var app = builder.Build();
 
