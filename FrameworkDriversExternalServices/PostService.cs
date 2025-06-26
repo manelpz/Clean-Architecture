@@ -9,10 +9,10 @@ public class PostService:IExternalService<PostServiceDTO>
     private readonly HttpClient _httpClient;
     private readonly JsonSerializerOptions _options;
 
-    public PostService()
+    public PostService(HttpClient httpClient)
     {
         
-        _httpClient = new HttpClient();
+        _httpClient = httpClient;
         _options = new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true,
@@ -20,7 +20,7 @@ public class PostService:IExternalService<PostServiceDTO>
     }
     public async Task<IEnumerable<PostServiceDTO>> GetContentAsync()
     {
-        var responseMessage = await _httpClient.GetAsync("https://jsonplaceholder.typicode.com/posts/");
+        var responseMessage = await _httpClient.GetAsync(_httpClient.BaseAddress);
         responseMessage.EnsureSuccessStatusCode();
         
         var responseData = await responseMessage.Content.ReadAsStringAsync();
