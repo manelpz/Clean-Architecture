@@ -6,6 +6,15 @@
 *.user
 *.sln.docstates
 
+# Ignorar carpetas de compilación
+**/bin/
+**/obj/
+**/Debug/
+
+# Ignorar archivos de configuración sensibles
+appsettings.json
+appsettings.*.json
+
 # Build results
 
 [Dd]ebug/

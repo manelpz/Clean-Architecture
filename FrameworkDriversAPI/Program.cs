@@ -35,6 +35,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 
 builder.Services.AddScoped<IRepository<Beer>, Repository>();
+builder.Services.AddScoped<IRepository<Sale>, SaleRepository>();
 builder.Services.AddScoped<IPresenter<Beer, BeerViewModel>, BeerPresenter>();
  
 //presentar detail
@@ -45,9 +46,12 @@ builder.Services.AddScoped<IExternalServiceAdapter<Post>, PostExternalServiceAda
 builder.Services.AddScoped<GetBeerUseCase<Beer, BeerViewModel>>();
 builder.Services.AddScoped<GetBeerUseCase<Beer, BeerDetailViewModel>>();
 builder.Services.AddScoped<GetPostUseCase>();
+builder.Services.AddScoped<GenerateSaleUseCase<SaleRequestDTO>>();
+builder.Services.AddScoped<GetSaleUseCase>();
 
 builder.Services.AddScoped<AddBeerUseCase<BeerRequestDTO>>();
 builder.Services.AddScoped<IMapper<BeerRequestDTO, Beer>, BeerMapper>();
+builder.Services.AddScoped<IMapper<SaleRequestDTO, Sale>, SaleMapper>();
 
 //validators
 builder.Services.AddValidatorsFromAssemblyContaining<BeerValidator>();
@@ -115,5 +119,22 @@ app.MapPost("/beer", async (AddBeerUseCase<BeerRequestDTO> beerUseCase, BeerRequ
         }
     ).WithName("addBeer")
     .WithOpenApi();
+
+    app.MapPost("/CreateSale", async (SaleRequestDTO salesRequest, GenerateSaleUseCase<SaleRequestDTO> saleUseCase) =>
+    {
+        await saleUseCase.ExecuteAsync(salesRequest);
+        return Results.Ok(salesRequest);
+    })
+    .WithName("CreateSale")
+    .WithOpenApi();
+
+
+    app.MapGet("/sale", async (GetSaleUseCase saleUseCase) =>
+        {
+            return await saleUseCase.ExecuteAsync();
+        })
+        .WithName("GetSale")
+        .WithOpenApi();
+
 
 app.Run();
