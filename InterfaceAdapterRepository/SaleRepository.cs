@@ -24,7 +24,7 @@ public class SaleRepository: IRepository<Sale>
             saleModel.CreationDate,
                     _dbContext.Models 
                         .Where(c => c.IdSale == saleModel.Id)
-                        .Select(c => new Concept(c.Quantity, c.IdBeer, c.UnitPrice))
+                        .Select(c => new Concept(c.IdBeer, c.Quantity, c.UnitPrice))
                         .ToList()
         ); 
     }
@@ -36,25 +36,26 @@ public class SaleRepository: IRepository<Sale>
                 s.CreationDate,
                 _dbContext.Models
                     .Where(c => c.IdSale == s.Id)
-                    .Select(c => new Concept(c.Quantity, c.IdBeer, c.UnitPrice))
+                    .Select(c => new Concept(c.IdBeer, c.Quantity, c.UnitPrice))
                     .ToList()
             )).ToListAsync(); 
         
 
     public async Task AddAsync(Sale sale)
     {
-        var saleModel = new SaleModel()
+        var saleModel = new SaleModel();
+
+        saleModel.CreationDate = sale.Date;
+        saleModel.Total = sale.Total;
+        saleModel.Concepts = sale.Concepts.Select(c => new ConceptModel
         {
-            CreationDate = sale.Date,
-            Total = sale.Total,
-            Concepts = sale.Concepts.Select(c=> new ConceptModel
-            {
-                IdBeer = c.IdBeer,
-                UnitPrice = c.Price,
-                Quantity = c.Quantity
-                
-            }).ToList(),
-        };
+            IdBeer = c.IdBeer,
+            UnitPrice = c.UnitPrice,
+            Quantity = c.Quantity
+            
+
+        }).ToList();
+        
         await _dbContext.Sales.AddAsync(saleModel);
         await _dbContext.SaveChangesAsync();
     }

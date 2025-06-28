@@ -25,11 +25,11 @@ public class SaleSearchRepository:IRepositorySearch< SaleModel, Sale>
 
             foreach (var conceptModel in saleModel.Concepts)
             {
-             var concept = new Concept(conceptModel.Id, conceptModel.Quantity, conceptModel.UnitPrice);
+             var concept = new Concept(conceptModel.IdBeer, conceptModel.Quantity, conceptModel.UnitPrice);
                 concepts.Add(concept);
             }
 
-            var sale = new Sale(saleModel.CreationDate, concepts);
+            var sale = new Sale(saleModel.Id, saleModel.CreationDate, concepts);
             sales.Add(sale);
 
         }
