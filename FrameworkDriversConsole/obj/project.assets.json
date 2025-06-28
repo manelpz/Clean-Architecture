@@ -1213,7 +1213,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "EnterpriseBusinessLayer": "1.0.0"
+          "EnterpriseBusinessLayer": "1.0.0",
+          "InterfaceAdaptarModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ApplicationBusinessLayer.dll": {}

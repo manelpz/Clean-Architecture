@@ -13,3 +13,5 @@
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/ApplicationBusinessLayer/obj/Debug/net7.0/refint/ApplicationBusinessLayer.dll
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/ApplicationBusinessLayer/obj/Debug/net7.0/ApplicationBusinessLayer.pdb
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/ApplicationBusinessLayer/obj/Debug/net7.0/ref/ApplicationBusinessLayer.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/ApplicationBusinessLayer/bin/Debug/net7.0/InterfaceAdaptarModels.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/ApplicationBusinessLayer/bin/Debug/net7.0/InterfaceAdaptarModels.pdb

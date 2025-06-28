@@ -28,6 +28,9 @@
             "projectReferences": {
               "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/EnterpriseBusinessLayer.csproj": {
                 "projectPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/EnterpriseBusinessLayer.csproj"
+              },
+              "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdaptarModels/InterfaceAdaptarModels.csproj": {
+                "projectPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdaptarModels/InterfaceAdaptarModels.csproj"
               }
             }
           }

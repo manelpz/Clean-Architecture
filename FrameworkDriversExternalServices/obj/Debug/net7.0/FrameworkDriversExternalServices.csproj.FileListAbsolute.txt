@@ -17,3 +17,5 @@
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversExternalServices/obj/Debug/net7.0/refint/FrameworkDriversExternalServices.dll
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversExternalServices/obj/Debug/net7.0/FrameworkDriversExternalServices.pdb
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversExternalServices/obj/Debug/net7.0/ref/FrameworkDriversExternalServices.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversExternalServices/bin/Debug/net7.0/InterfaceAdaptarModels.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/FrameworkDriversExternalServices/bin/Debug/net7.0/InterfaceAdaptarModels.pdb

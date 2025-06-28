@@ -28,6 +28,9 @@
             "projectReferences": {
               "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/EnterpriseBusinessLayer.csproj": {
                 "projectPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/EnterpriseBusinessLayer.csproj"
+              },
+              "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdaptarModels/InterfaceAdaptarModels.csproj": {
+                "projectPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdaptarModels/InterfaceAdaptarModels.csproj"
               }
             }
           }
@@ -69,6 +72,59 @@
         "projectPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/EnterpriseBusinessLayer.csproj",
         "packagesPath": "/Users/emmanuellopezguerrero/.nuget/packages/",
         "outputPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/emmanuellopezguerrero/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdaptarModels/InterfaceAdaptarModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdaptarModels/InterfaceAdaptarModels.csproj",
+        "projectName": "InterfaceAdaptarModels",
+        "projectPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdaptarModels/InterfaceAdaptarModels.csproj",
+        "packagesPath": "/Users/emmanuellopezguerrero/.nuget/packages/",
+        "outputPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdaptarModels/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/emmanuellopezguerrero/.nuget/NuGet/NuGet.Config"
