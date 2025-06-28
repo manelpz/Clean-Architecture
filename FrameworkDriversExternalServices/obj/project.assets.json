@@ -6,7 +6,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "EnterpriseBusinessLayer": "1.0.0"
+          "EnterpriseBusinessLayer": "1.0.0",
+          "InterfaceAdaptarModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ApplicationBusinessLayer.dll": {}
@@ -23,6 +24,16 @@
         },
         "runtime": {
           "bin/placeholder/EnterpriseBusinessLayer.dll": {}
+        }
+      },
+      "InterfaceAdaptarModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/InterfaceAdaptarModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InterfaceAdaptarModels.dll": {}
         }
       },
       "InterfaceAdapterAdapters/1.0.0": {
@@ -50,6 +61,11 @@
       "type": "project",
       "path": "../EnterpriseBusinessLayer/EnterpriseBusinessLayer.csproj",
       "msbuildProject": "../EnterpriseBusinessLayer/EnterpriseBusinessLayer.csproj"
+    },
+    "InterfaceAdaptarModels/1.0.0": {
+      "type": "project",
+      "path": "../InterfaceAdaptarModels/InterfaceAdaptarModels.csproj",
+      "msbuildProject": "../InterfaceAdaptarModels/InterfaceAdaptarModels.csproj"
     },
     "InterfaceAdapterAdapters/1.0.0": {
       "type": "project",

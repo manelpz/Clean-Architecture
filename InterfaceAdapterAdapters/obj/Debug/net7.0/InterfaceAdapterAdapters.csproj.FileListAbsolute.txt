@@ -15,3 +15,5 @@
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterAdapters/obj/Debug/net7.0/refint/InterfaceAdapterAdapters.dll
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterAdapters/obj/Debug/net7.0/InterfaceAdapterAdapters.pdb
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterAdapters/obj/Debug/net7.0/ref/InterfaceAdapterAdapters.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterAdapters/bin/Debug/net7.0/InterfaceAdaptarModels.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdapterAdapters/bin/Debug/net7.0/InterfaceAdaptarModels.pdb

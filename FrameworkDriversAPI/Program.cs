@@ -36,6 +36,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IRepository<Beer>, Repository>();
 builder.Services.AddScoped<IRepository<Sale>, SaleRepository>();
+builder.Services.AddScoped<IRepositorySearch<SaleModel, Sale>, SaleSearchRepository>();
 builder.Services.AddScoped<IPresenter<Beer, BeerViewModel>, BeerPresenter>();
  
 //presentar detail
@@ -48,6 +49,7 @@ builder.Services.AddScoped<GetBeerUseCase<Beer, BeerDetailViewModel>>();
 builder.Services.AddScoped<GetPostUseCase>();
 builder.Services.AddScoped<GenerateSaleUseCase<SaleRequestDTO>>();
 builder.Services.AddScoped<GetSaleUseCase>();
+builder.Services.AddScoped<GetSaleSearchUseCase<SaleModel>>();
 
 builder.Services.AddScoped<AddBeerUseCase<BeerRequestDTO>>();
 builder.Services.AddScoped<IMapper<BeerRequestDTO, Beer>, BeerMapper>();
@@ -120,7 +122,7 @@ app.MapPost("/beer", async (AddBeerUseCase<BeerRequestDTO> beerUseCase, BeerRequ
     ).WithName("addBeer")
     .WithOpenApi();
 
-    app.MapPost("/CreateSale", async (SaleRequestDTO salesRequest, GenerateSaleUseCase<SaleRequestDTO> saleUseCase) =>
+    app.MapPost("/createsale", async (SaleRequestDTO salesRequest, GenerateSaleUseCase<SaleRequestDTO> saleUseCase) =>
     {
         await saleUseCase.ExecuteAsync(salesRequest);
         return Results.Ok(salesRequest);
@@ -136,5 +138,11 @@ app.MapPost("/beer", async (AddBeerUseCase<BeerRequestDTO> beerUseCase, BeerRequ
         .WithName("GetSale")
         .WithOpenApi();
 
+    app.MapGet("/salesearch/{total}", async (GetSaleSearchUseCase<SaleModel> saleSearchUseCase, int total) =>
+        {
+            return await saleSearchUseCase.ExecuteAsync(s => s.Total > total);
+        })
+        .WithName("GetSaleSearch")
+        .WithOpenApi();
 
 app.Run();

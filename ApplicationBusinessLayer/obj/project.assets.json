@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/EnterpriseBusinessLayer.dll": {}
         }
+      },
+      "InterfaceAdaptarModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/InterfaceAdaptarModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InterfaceAdaptarModels.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../EnterpriseBusinessLayer/EnterpriseBusinessLayer.csproj",
       "msbuildProject": "../EnterpriseBusinessLayer/EnterpriseBusinessLayer.csproj"
+    },
+    "InterfaceAdaptarModels/1.0.0": {
+      "type": "project",
+      "path": "../InterfaceAdaptarModels/InterfaceAdaptarModels.csproj",
+      "msbuildProject": "../InterfaceAdaptarModels/InterfaceAdaptarModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "EnterpriseBusinessLayer >= 1.0.0"
+      "EnterpriseBusinessLayer >= 1.0.0",
+      "InterfaceAdaptarModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -53,6 +69,9 @@
           "projectReferences": {
             "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/EnterpriseBusinessLayer.csproj": {
               "projectPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/EnterpriseBusinessLayer/EnterpriseBusinessLayer.csproj"
+            },
+            "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdaptarModels/InterfaceAdaptarModels.csproj": {
+              "projectPath": "/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdaptarModels/InterfaceAdaptarModels.csproj"
             }
           }
         }

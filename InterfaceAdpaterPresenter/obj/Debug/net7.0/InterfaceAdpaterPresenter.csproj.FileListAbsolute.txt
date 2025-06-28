@@ -15,3 +15,5 @@
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/obj/Debug/net7.0/refint/InterfaceAdpaterPresenter.dll
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/obj/Debug/net7.0/InterfaceAdpaterPresenter.pdb
 /Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/obj/Debug/net7.0/ref/InterfaceAdpaterPresenter.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/bin/Debug/net7.0/InterfaceAdaptarModels.dll
+/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/InterfaceAdpaterPresenter/bin/Debug/net7.0/InterfaceAdaptarModels.pdb
