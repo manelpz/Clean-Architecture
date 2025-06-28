@@ -9,8 +9,8 @@ public class Concept
 
     public Concept(int idBeer, int quantity, decimal unitPrice)
     {
-        Quantity = quantity;
         IdBeer = idBeer;
+        Quantity = quantity;
         UnitPrice = unitPrice;
         Price = GetTotalPrice();
     }
