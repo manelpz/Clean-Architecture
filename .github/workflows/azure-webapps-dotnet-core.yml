@@ -1,8 +1,8 @@
 name: Build and deploy ASP.NET Core app to Azure Web App
 
 env:
-  AZURE_WEBAPP_NAME: manelpzcleanarchitecture   # Nombre del App Service
-  DOTNET_VERSION: '7'                           # Cambia si usas otra versión
+  AZURE_WEBAPP_NAME: manelpzcleanarchitecture   # Nombre del App Service en Azure
+  DOTNET_VERSION: '7'                           # Versión de .NET que estás usando
 
 on:
   push:
@@ -33,17 +33,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuget-
 
-      - name: Locate solution and build
-        run: |
-          SOLUTION=$(find . -name "*.sln")
-          echo "Found solution: $SOLUTION"
-          dotnet build "$SOLUTION" --configuration Release
+      - name: Build solution
+        run: dotnet build "Clean Architecture.sln" --configuration Release
 
-      - name: Locate Web API project and publish
-        run: |
-          PROJECT=$(find . -name "FrameworkDriversAPI.csproj")
-          echo "Found project: $PROJECT"
-          dotnet publish "$PROJECT" -c Release -o ./publish
+      - name: Publish Web API
+        run: dotnet publish "Clean Architecture/FrameworkDriversAPI/FrameworkDriversAPI.csproj" -c Release -o ./publish
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
