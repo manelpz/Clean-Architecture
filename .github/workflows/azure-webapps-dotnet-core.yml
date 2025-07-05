@@ -1,8 +1,8 @@
 name: Build and deploy ASP.NET Core app to Azure Web App
 
 env:
-  AZURE_WEBAPP_NAME: manelpzcleanarchitecture   # Nombre de tu Web App en Azure
-  DOTNET_VERSION: '7'                           # Versión de .NET que usas
+  AZURE_WEBAPP_NAME: manelpzcleanarchitecture
+  DOTNET_VERSION: '7'
 
 on:
   push:
@@ -34,7 +34,7 @@ jobs:
             ${{ runner.os }}-nuget-
 
       - name: Build solution
-        run: dotnet build "Clean Architecture/FrameworkDriversAPI/FrameworkDriversAPI.csproj" --configuration Release
+        run: dotnet build "Clean Architecture/Clean Architecture.sln" --configuration Release
 
       - name: Publish Web API
         run: dotnet publish "Clean Architecture/FrameworkDriversAPI/FrameworkDriversAPI.csproj" -c Release -o ./publish
