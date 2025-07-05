@@ -735,7 +735,8 @@
       },
       "ApplicationBusinessLayer/1.0.0": {
         "dependencies": {
-          "EnterpriseBusinessLayer": "1.0.0"
+          "EnterpriseBusinessLayer": "1.0.0",
+          "InterfaceAdaptarModels": "1.0.0"
         },
         "runtime": {
           "ApplicationBusinessLayer.dll": {}

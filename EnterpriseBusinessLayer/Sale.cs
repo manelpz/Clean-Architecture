@@ -5,7 +5,7 @@ public class Sale
     public int Id { get; }
     public DateTime Date { get; }
     public decimal Total { get; }
-    public List<Concept> Concepts { get; }
+    public List<Concept> Concepts { get; } 
 
     public Sale(DateTime date, List<Concept> concepts)
     {
