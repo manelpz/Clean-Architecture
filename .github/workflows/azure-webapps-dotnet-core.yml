@@ -1,8 +1,8 @@
 name: Build and deploy ASP.NET Core app to Azure Web App
 
 env:
-  AZURE_WEBAPP_NAME: manelpzcleanarchitecture   # Nombre del App Service en Azure
-  DOTNET_VERSION: '7'                           # Versión de .NET que estás usando
+  AZURE_WEBAPP_NAME: manelpzcleanarchitecture
+  DOTNET_VERSION: '7'
 
 on:
   push:
@@ -42,10 +42,31 @@ jobs:
           ls -R
 
       - name: Publish Web API
-        run: dotnet publish "Clean Architecture/FrameworkDriversAPI/FrameworkDriversAPI.csproj" -c Release -o ./publish
+        run: dotnet publish ./FrameworkDriversAPI/FrameworkDriversAPI.csproj -c Release -o ./publish
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: dotnet-app
           path: ./publish
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dotnet-app
+
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          package: ./publish
