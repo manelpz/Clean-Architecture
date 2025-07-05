@@ -1,10 +1,26 @@
+name: Build and deploy ASP.NET Core app to Azure Web App
+
+env:
+  AZURE_WEBAPP_NAME: manelpzcleanarchitecture   # Nombre de tu Web App en Azure
+  DOTNET_VERSION: '7'                           # Versión de .NET que usas
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Set up .NET Core
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up .NET SDK
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
@@ -17,10 +33,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuget-
 
-      - name: Build with dotnet
+      - name: Build solution
         run: dotnet build "Clean Architecture/FrameworkDriversAPI/FrameworkDriversAPI.csproj" --configuration Release
 
-      - name: Publish app
+      - name: Publish Web API
         run: dotnet publish "Clean Architecture/FrameworkDriversAPI/FrameworkDriversAPI.csproj" -c Release -o ./publish
 
       - name: Upload artifact
@@ -32,6 +48,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
+
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v4
