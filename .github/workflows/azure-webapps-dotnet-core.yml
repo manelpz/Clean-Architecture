@@ -36,19 +36,14 @@ jobs:
       - name: Build solution
         run: dotnet build "Clean Architecture.sln" --configuration Release
 
-      - name: List directory structure
-        run: |
-          echo "📁 Mostrando contenido del repo:"
-          ls -R
-
       - name: Publish Web API
-        run: dotnet publish ./FrameworkDriversAPI/FrameworkDriversAPI.csproj -c Release -o ./publish
+        run: dotnet publish ./FrameworkDriversAPI/FrameworkDriversAPI.csproj -c Release -o publish
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: dotnet-app
-          path: ./publish
+          path: publish
 
   deploy:
     runs-on: ubuntu-latest
@@ -60,6 +55,9 @@ jobs:
         with:
           name: dotnet-app
 
+      - name: List publish folder contents
+        run: ls -R publish
+
       - name: Login to Azure
         uses: azure/login@v1
         with:
@@ -69,4 +67,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          package: ./publish
+          package: publish
