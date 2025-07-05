@@ -55,8 +55,8 @@ jobs:
         with:
           name: dotnet-app
 
-      - name: List publish folder contents
-        run: ls -R publish
+      - name: List contents after download
+        run: ls -R
 
       - name: Login to Azure
         uses: azure/login@v1
@@ -67,4 +67,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          package: publish
+          package: .
