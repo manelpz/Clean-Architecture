@@ -23,7 +23,7 @@ public class Repository: IRepository<Beer>
         var beerModel = await _dbContext.Beers.FindAsync(id);
         return new Beer()
         {
-            Id = beerModel.Id,
+            Id = beerModel.Id,  
             Alcohol = beerModel.Alcohol,
             Name = beerModel.Name,
             Style = beerModel.Style,
