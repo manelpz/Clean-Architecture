@@ -33,9 +33,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuget-
 
-      - name: Build solution
-        run: dotnet build "Clean Architecture/Clean Architecture.sln" --configuration Release
-
       - name: Publish Web API
         run: dotnet publish "Clean Architecture/FrameworkDriversAPI/FrameworkDriversAPI.csproj" -c Release -o ./publish
 
