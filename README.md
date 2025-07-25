@@ -2,7 +2,6 @@
  C# solution with two endpoints Get/Post for beers with EntityFramework and swagger 
 
  ***
- Exercise from the Udemy Course [Clean Architecture en C# .NET, un curso basado en conceptos](https://www.udemy.com/course/clean-architecture-course/)
  ***
  (deployment link) - localhost swagger
  
