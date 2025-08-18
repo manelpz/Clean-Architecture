@@ -1,5 +1,0 @@
-/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/Interface Adapter/obj/Debug/net7.0/Interface Adapter.csproj.AssemblyReference.cache
-/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/Interface Adapter/obj/Debug/net7.0/Interface Adapter.GeneratedMSBuildEditorConfig.editorconfig
-/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/Interface Adapter/obj/Debug/net7.0/Interface Adapter.AssemblyInfoInputs.cache
-/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/Interface Adapter/obj/Debug/net7.0/Interface Adapter.AssemblyInfo.cs
-/Users/emmanuellopezguerrero/RiderProjects/Clean Architecture/Interface Adapter/obj/Debug/net7.0/Interface Adapter.csproj.CoreCompileInputs.cache
